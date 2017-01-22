@@ -1,3 +1,4 @@
+
 # The story
 Do you love geometry? Our young friend Zigy (Zygfryd) loves it too. Unfortunately it's one-sided love. He's studying hard for his high-school exam, but with minor success. You've got to help him!
 
@@ -245,3 +246,6 @@ If you've fulfilled all the basic requirements and you're ambitious enough to co
 Help Zigy even more and implement quiz feature. This feature should generate random shape. Tell the user the type of shape and it's attributes. The user should calculate the perimeter and area. The program should check users answer.
 
 You can also add more shapes to the geometry class.
+
+# Python-OO-Geometry
+
