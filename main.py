@@ -3,6 +3,9 @@ from geometry import *
 import os
 
 def print_menu():
+    """
+    Printing menu of a program.
+    """
     print('Learn Geometry, \n'
           'What do you want to do?, \n'
           '(1) Add new shape, \n'
@@ -13,7 +16,9 @@ def print_menu():
           '(0) Exit program \n')
 
 def main():
-
+    """
+    Running program and all available options.
+    """
     shapes = ShapeList()  # object containing all shapes added by the user
     while True:
         # TODO: implement user interaction here. You can change the code below

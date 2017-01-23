@@ -359,7 +359,7 @@ class RegularPentagon(Shape):
         Returns information about the shape as string.
 
         Returns:
-            str: information about shape
+        str: information about shape
         """
         return 'Regular pentagon, a = {}'.format(self.a)
 
@@ -374,10 +374,11 @@ class ShapeList:
         self.shapes = shapes
 
     def add_shape(self, shape):
+
         """
-        Adds shape to shapes list. This method should check if shape's has Shape class as it's ancestor(przodek).
-        If not it should raise TypeError. Hint: check is instance function.
-        (This is a good example of so called polymorphism)
+        This method is adding new object.
+        :param shape
+        :return added object
         """
         if isinstance(shape, Shape):
             self.shapes.append(shape)
@@ -449,8 +450,6 @@ class ShapeList:
             str_table += "|"
         str_table += '\n'
         str_table += ('-' * how_wide)
-        # str_table += '\n'  # dividing columns
-
 
         for row in table:
             str_table += '\n'
