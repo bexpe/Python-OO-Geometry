@@ -449,7 +449,7 @@ class ShapeList:
             str_table += "|"
         str_table += '\n'
         str_table += ('-' * how_wide)
-        str_table += '\n'  # dividing columns
+        # str_table += '\n'  # dividing columns
 
 
         for row in table:

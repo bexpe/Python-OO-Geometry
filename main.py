@@ -63,8 +63,6 @@ def main():
                 rp = RegularPentagon(int(side))
                 shapes.add_shape(rp)
                 print("Shape added")
-            # else:
-            #     print("You must type a number from one to six")
         elif option == "2":
             print(shapes.get_shapes_table())
         elif option == "3":
@@ -103,10 +101,11 @@ def main():
                 print("Regular Pentagon perimeter: ", RegularPentagon.get_perimeter_formula())
                 print("Circle area: ", RegularPentagon.get_area_formula())
                 input("Type enter to continue  ")
-            # else:
-            #     print("You must type a number from one to six")
         elif option == "0":
             sys.exit()
+        else:
+            print("You must type a number from one to six")
+
 
 if __name__ == "__main__":
     main()
