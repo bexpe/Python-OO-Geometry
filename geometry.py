@@ -383,7 +383,6 @@ class ShapeList:
             self.shapes.append(shape)
         else:
             raise TypeError("Shape should be an instance class!")
-
         return self.shapes
 
     def get_largest_shape_by_perimeter(self):
@@ -420,15 +419,14 @@ class ShapeList:
         """
         Returns a table with objects list, which was formated to a str.
         """
-
         title_list = ['idx', 'class', '__str__', 'Perimeter', 'P. Formula', 'Area', 'A. Formula']
         table = []
         str_table = ''
-
+        print(self.shapes)
         for iterator, shape in enumerate(self.shapes):
             table.append([str(iterator + 1), type(shape).__name__, shape.__str__(), str(round(shape.get_perimeter(), 1)),
             shape.get_perimeter_formula(), str(shape.get_area()), shape.get_area_formula()])  # adding all args
-
+        print(table)
         column_length = []
         for title_iterator in range(len(title_list)):
             column_len = len(title_list[title_iterator])
@@ -452,6 +450,7 @@ class ShapeList:
         str_table += '\n'
         str_table += ('-' * how_wide)
         str_table += '\n'  # dividing columns
+
 
         for row in table:
             str_table += '\n'
